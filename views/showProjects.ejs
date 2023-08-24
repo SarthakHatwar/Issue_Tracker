@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title>All Projects</title>
+</head>
+<body>
+  <header>
+    <a href="/" class="header-link"><h1>Issue Tracker</h1></a>
+  </header>
+  
+  <main id="projectList">
+    <h2>All Projects</h2>
+    <ul>
+      <% projects.forEach((project, index) => { %>
+        <li>
+          <a id="pname" href="/project/<%= index %>"><%= project.name %></a>
+          <a href="/create-issue/<%= index %>" class="btn">Create Issue</a>
+        </li>
+      <% }); %>
+    </ul>
+  </main>
+</body>
+</html>

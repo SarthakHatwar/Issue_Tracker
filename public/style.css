@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #09f7d7;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-left: 40vw;
+    padding: 3rem;
+    margin-top: 25vh;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 1rem;
+  }
+
+  li::marker{
+    content: '👉';
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background-color: #555;
+  }
+  form{
+    width: 17vw;
+    
+  }
+  a{
+
+    text-decoration: none;
+    color: white;
+  }
+  #pname{
+    color: black;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  #projectList{
+    margin-top: 10vh;
+  }
+
+  #cissue{
+
+    margin-top: 20vh;
+  }
+  #proj{
+    margin-top: 10vh;
+  }

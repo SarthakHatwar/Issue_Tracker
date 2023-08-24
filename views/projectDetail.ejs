@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/style.css">
+  <title><%= project.name %> Detail</title>
+</head>
+<body>
+  <header>
+    <a href="/" class="header-link"><h1>Issue Tracker</h1></a>
+  </header>
+  
+  <main id="proj">
+    <h2><%= project.name %> Detail</h2>
+    <p>Description: <%= project.description %></p>
+    <p>Author: <%= project.author %></p>
+
+    <h3>Issues:</h3>
+    <ul>
+      <% projectIssues.forEach(issue => { %>
+        <li>
+          <h4><%= issue.title %></h4>
+          <p><%= issue.description %></p>
+          <p>Author: <%= issue.author %></p>
+        </li>
+      <% }); %>
+    </ul>
+    
+    <a href="/create-issue/<%= projectId %>" class="btn">Create Issue</a>
+
+  </main>
+</body>
+</html>                                   
